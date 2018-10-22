@@ -1,0 +1,362 @@
+*{
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}/**/
+.cf:after{
+    content:" ";
+    display: table;
+}
+.cf:after{
+    clear:both;
+}
+body{
+    background-color:yellow;
+    font-family:'Amnesty Trade Gothic', Arial;
+    color:#24272f;
+    font-size:100%;
+    margin:0 auto;
+    width:100%;
+    max-width:1080px;
+
+}
+header{
+    width:100%;
+    margin:0 auto;
+    background-color:black;
+    text-align: center; 
+    padding:2% 5% 0 5%;
+}
+/*****all pics******/
+#indexHeaderFlag, #indexHeaderImg1{
+    background-image:url('../assets/aiTuerkeiFlagge.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:100%;
+    padding:0 0 100% 0;
+}
+#headlineHeader{
+    font-size:1.3rem;
+    text-transform:uppercase;
+    color:whitesmoke;    
+    font-weight:bold;
+    color:yellow;
+}
+.Navi1{	
+    width:100%;    
+}
+#sandwich{    
+    width:14%;
+    margin:0 0 5% 5%;
+    font-size:2rem;
+    color:yellow;    
+    background-color:black;
+    z-index:10;
+    border-radius:50%;
+    box-shadow:0 0 10px yellow;
+    cursor:pointer;
+}
+#sandwich:before{
+    content:'\2630';
+}
+#picsTop .imgsTop{
+    margin:0 auto;
+}
+.navi{	
+    position:relative;
+    text-decoration: none;	
+    font-size:1.35vw;
+    text-shadow: 5px 5px 10px gray;
+    text-align: left;
+    padding:1.5% 0 1.5% 1%;	
+    margin-left:5%;		
+}
+
+h2{ font-size:2.5rem;
+    text-shadow: 2px 2px 5px #a5a5a3;	
+}
+#naviLeft{	
+    margin:2% 0 0 3%;
+    display:none;
+}
+#naviLeft .list-group-item{
+  background-color:transparent; 
+  color:black;
+}
+#naviTop{
+    margin:0 auto;
+}
+ul, ul li{
+    list-style: none;
+}
+h4{
+    font-size:115%;
+    padding:5%;
+}
+.card-body{
+    padding:0;
+}
+#mbInputForm{
+    padding:5%;
+}
+#uploadImage{
+    
+}
+#subNavi{	
+    display:none;
+    margin:10% auto;
+    padding:2% 4%;
+    width:100%;
+    position: absolute;
+    z-index:5;	
+    border-radius:4%;	    
+}
+#subNavi div{    
+    box-shadow:0px 1px 5px yellow;
+    background-color: black;
+    color:#ffffff;
+    font-size:0.9rem;
+    font-weight:bolder;
+    padding:0.6em 0.4em;
+}
+.list-group-item{
+    margin:0;
+}
+.box{
+    position:relative;
+    background-color:#abc;
+    width:40px;
+    height:40px;
+    float:left;
+    margin:5px;
+    cursor:pointer;
+
+}
+#asideRight{
+    text-align: center;
+    padding:2%;
+    max-height:735px;
+    height:auto;
+    width:100%;	
+    margin:0 auto;
+    overflow: auto; 
+    box-sizing: border-box;
+}
+.card{
+    text-align:left;    
+    background-color: rgba(255,255,255, 0.5);
+    margin:0 0 5% 0;
+    box-shadow:0 0 10px gray;
+}
+#indexHeaderImg1, #indexHeaderImg3{
+    float:right;
+    margin:0.3rem 1rem 0 1rem;
+}
+#indexHeaderImg1{
+    background-image:url('../assets/facebookIcon.png');
+    padding:0 0 60% 0;
+    background-size:auto 80%;
+    background-position-x:left;
+}
+#indexMain{
+    margin-top:-2em;
+}
+#indexSideImg0, #indexSideImg1, #indexSideImg2, #indexSideImg3{
+    width:75%;
+    padding:0 0 45% 0;
+    margin:0.5% 0 0 1%;
+    box-shadow: 5px 5px 10px gray;
+    transform: rotate(15deg);
+    z-index:1;	
+    height:auto;
+    background-image:url('../assets/TuerkeiDemo.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+#indexSideImg0{
+    background-image:url('../assets/TuerkeiMR.jpg');
+    transform:rotate(-6deg);
+    margin:1% 0 0 4%;
+
+}
+#indexSideImg1{
+    width:80%;
+    padding:0 0 40% 0;
+}
+#indexSideImg2{
+    background-image:url('../assets/TuerkeiDemo2.jpg');
+    transform:rotate(345deg);
+    margin-top:-4%;
+    z-index:2;	
+    height:auto;
+}
+#indexSideImg3{
+    background-image:url('../assets/TuerkeiFrauen.jpg');	
+    transform:rotate(7deg);
+    margin:-1% 0 0 2%;	
+    z-index:1;
+}
+
+#ng-view{
+    min-height:35em;
+    max-height:50em;
+    overflow:auto;
+    margin-top:5%;
+}
+
+.sortArrow{
+    cursor: pointer;
+}
+table{	
+    height:516px;
+}
+table th, table td{
+    text-align: left;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border-bottom:1px solid gray;
+}
+table td{	
+    font-size:90%;			
+}
+table th{
+    font-style: italic;
+    cursor:pointer;
+}
+table td img{	
+    cursor:pointer;
+    float:right;
+    min-width:50%;
+    height:auto;	
+}
+.tblDate{
+    font-size: 0.6em;
+}
+.tblTheme{
+    cursor:pointer;
+    font-size:0.9em;
+    font-weight:bolder;
+}
+.increm, .decrem{
+    cursor:pointer;
+    width:2%;
+    height:1%;
+}
+.arrow-up, .arrow-down{
+    width:0;
+    height:0;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    display:inline-block;	
+    margin:0 0 0 15%;
+}
+.arrow-up{
+    border-bottom:10px solid black;
+}
+.arrow-down{
+    border-top:10px solid black;
+}
+#searchKeyword{	
+    padding:0.2em 0.5em 0.2em 0.5em;
+    margin:-4% 0 0 2%;
+}
+.date{
+    width:5em;
+}
+#dateMsg{
+    font-size: 75%;
+}
+#meetingPic{
+    width:90%;
+}
+my-widget{	
+    padding:10px;	
+    width:100%;
+    height:auto;
+    overflow: hidden;	
+    z-index:9;
+}
+.linkMoreNews{
+    cursor:pointer;
+    text-underline-position: under;
+    color:blue;
+}
+.moreInfo{
+    display: block;
+    padding:5px;
+    background-color: #f8fa44;
+    box-shadow: 0 1px 3px gray;	
+}
+.actualImg{
+    width:auto;
+    height:70%;
+    float: right;
+}
+#btnTop, #btnBottom{
+    box-shadow: 2px 2px 10px gray;
+    margin:-10% 0 0 50%;
+}
+#kontaktMessage{
+    font-size:0.8em;
+    color:#102568;
+}
+.loginForm, #mbInputForm{
+    width:45%;	
+    margin:2%;
+}
+.loginForm input, #mbInputForm input, #mbInputForm textarea{
+    padding:3px;
+    margin-top:2%;
+    box-shadow: 0 1px 3px gray;
+}
+#inputAktuelles, #internSection{
+    position:absolute;
+    background-color:#edecec;
+    width:35em;
+    height:auto;
+    border:2px solid black;
+    padding:10px;
+    margin:-140% 0 0 -10%;
+    z-index:5;
+    display:none;
+}
+#actualImg{
+    position: absolute;
+}
+#internSection{
+    padding:20px;
+}
+#internTexts{
+    background-color: #f0f5a6;
+    min-height:10em;
+    max-height:auto;
+}
+#updateForm{
+    background-color:#f3efac;
+    position:absolute;
+    display:block;
+    margin-top:-5%;
+    padding:0 2% 0 3%;
+    border:2px solid black;
+    box-shadow: 2px 2px 6px gray;
+    z-index:10;
+}
+#fileUpload{
+    font-size: 0.7em;
+}
+#x-button{
+    position: absolute;	
+    z-index:7;
+    cursor: pointer;
+}
+#termine{
+    width:auto;
+    height:33.8em;
+}
+footer{
+    clear:both;
+    width:100%;
+    height:20px;
+    background-color:#a5a5a3;	
+    box-shadow:5px 5px 10px gray;
+    opacity:0.5;
+}

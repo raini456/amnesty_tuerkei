@@ -1,0 +1,40 @@
+<!--my-widget>
+  <div class="box"></div>
+  <div class="box"></div>
+</my-widget-->
+<h3>Aktuelles</h3>
+
+<div class="container-fluid contentView" id="containerAktuelles" ><!--ng-click="hideMoreNews()"-->  <div class="row-fluid">
+     <div class="col-md-1 date">Datum</div>
+     <div class="date col-md-8" ng-click="sortData('date')"  ng-hide="hideDate">
+     <div ng-class="getSortArrows('date')" class="sortArrow"></div>
+    </div>
+    <div id="tdImgRow" class="col-md-3"></div>
+  </div>
+
+<hr>
+
+<div  ng-repeat="msg in message1 | orderBy:date:sortColumn:directSort | filter:keyword:exactSearch">
+     
+    <div class="col-md-9">
+      <span id="dateMsg">{{msg.datum | date: dd/MM/yyyy}}</span><br>
+        <b>{{msg.thema|uppercase}}</b><br>      
+        <div ng-bind-html="msg.nachricht"></div>
+      <!--show-more></show-more
+      //, 
+      --> 
+      <div class="linkMoreNews" ng-click="showHiddenNews = ! showHiddenNews"
+      ><!--   ng-click=""showMoreNews()"-->mehr</div>
+      <div ng-bind-html="msg.mehrInfos" class="moreInfo" ng-show="showHiddenNews" ng-click="showHiddenNews = ! showHiddenNews"></div>
+    </div>
+    <div class="col-md-3"><img ng-src="{{msg.bilderDaten}}" alt="{{msg.picAlt}}" class="actualImg" width=150 height=80></div>
+  </div>  
+  <hr>
+
+</div>
+        
+        
+    <!-- "
+ng-click="hide='open'" toggleThis()"
+ ng-mouseleave="hide='open'" ng-mouseleave="hide='open'" ng-hide='open'  -->    
+

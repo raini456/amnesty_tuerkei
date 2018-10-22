@@ -1,0 +1,27 @@
+<h3>Archive</h3>
+<div class="container-fluid content">
+  <div class="row-fluid">
+    <div class="col-md-1 date">Datum</div>
+    <div class="date col-md-7" ng-click="sortData('date')"  ng-hide="hideDate">
+     <div ng-class="getSortArrows('date')" class="sortArrow"></div>
+    </div>
+    <div id="tdImgRow" class="col-md-4"></div>
+  </div>
+
+<hr>
+<div  ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch">
+  <div class="col-md-8">    
+    <div>
+      <span id="dateMsg">{{msg.date | date: dd/MM/yyyy}}</span><br>  <b>{{msg.subtitle|uppercase}}</b><br>      
+        {{msg.news}}<br>
+      <div class="moreInfo"><u ng-click="showMoreNews()">mehr</u><br></div>
+      <div class="hiddenNews" ng-bind="msg.subnews"></div> {{word}} <hr>          
+    </div>    
+  </div>
+  <div class="col-md-4"><img ng-src="{{msg.pic}}"" alt="{{msg.picAlt}}"></div>
+</div>  
+</div>
+        
+        
+        
+

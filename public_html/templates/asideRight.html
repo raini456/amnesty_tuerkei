@@ -1,0 +1,25 @@
+<div class="row" id="asideRight">
+    <br>
+    <h3>Dies und das</h3><br>
+    <div class="card card-body">
+        <h4>Gruppentreffen</h4>
+        <ul>
+            <li ng-repeat="meeting in meetings">
+                <b>Datum:</b> {{meeting.date}}<br>
+                <b>Uhrzeit: </b>{{meeting.time}}<br>
+                <b>Ort:</b> {{meeting.place}}<br><br>
+            </li>
+        </ul>
+    </div>
+    <div class="card card-body">
+        <h4>Aktionen</h4>
+        <ul>
+            <li ng-repeat="action in actions">
+                <b>Datum:</b> {{action.date}}<br>
+                <b>Uhrzeit:</b> {{action.time}}<br>
+                <b>Aktion:</b> {{action.action}}<br>
+                <b>Ort:</b> {{action.place}}<br><br>
+            </li>
+        </ul>
+    </div>
+</div>        

@@ -1,0 +1,15 @@
+<h3>Eingabe</h3>
+ <form id="mbInputForm">
+    <br>
+ 	<input type="text" ng-model="inputDate" placeholder="Datum"><br> 
+ 	<br>
+ 	<input type="text" ng-model="inputAuthor" placeholder="Autor"><br>
+ 	<br>
+ 	<input type="text" ng-model="inputTheme" placeholder="Thema"><br>
+ 	<br><br>
+ 	<textarea ng-model="inputNews" cols=30 rows=3 placeholder="Hauptnachricht"></textarea><br><br>
+ 	<br>
+ 	<textarea ng-model="inputMoreInfo" cols=30 rows=3 placeholder="mehr"></textarea><br><br>
+	<input type="button" ng-click="insertData()" value="Daten einf&uuml;gen" /><br><br>
+	<button ng-click="formAusblenden()">Logout</button>
+ </form>

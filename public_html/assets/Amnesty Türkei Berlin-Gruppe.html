@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html ng-app="mainApp" class="ng-scope"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<title>Amnesty Türkei Berlin-Gruppe</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Amnesty Türkeigruppe Berlin">
+<meta name="keywords" content="">
+<meta name="AI Türkei Berlin" content="Gruppenseite">
+<meta name="OWNER" content="Amnesty International">
+<meta name="AUTHOR" content="Stefan Landvogt">
+<meta http-equiv="CHARSET" content="UTF-8">
+<meta http-equiv="CONTENT-LANGUAGE" content="Deutsch">
+<meta http-equiv="VW96.OBJECT TYPE" content="Artikel">
+<meta name="RATING" content="Alle">
+<meta name="ROBOTS" content="index,follow">
+<link rel="shortcut icon" type="image/x-icon" href="file:///C:/xampp/htdocs/AngTutAug16/assets/Bilder/favicon.ico">
+<!--link rel="stylesheet" href="css/bootstrap.css" type="text/css" /-->
+<link rel="stylesheet" href="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/bootstrapOlder.css" type="text/css">
+<link rel="stylesheet" href="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/normalize.css">
+<link rel="stylesheet" href="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/mainCss.css" type="text/css">
+<link rel="stylesheet" href="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/responsiveCss.css" type="text/css">
+<script src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/angularJS.txt"></script>
+<script src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/ngRoute.txt"></script>
+<script src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/toggle.txt"></script>
+<script src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/mainModule.txt"></script>
+<script src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/filters.txt"></script>
+<script src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/loginCtrl.txt"></script>
+<script src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/stringService.txt"></script>
+
+
+<!--[if lt IE 9]>
+	<script src="scripts/lib/mediaQueries.js"></script>
+<![endif]-->
+<!--script scr="scripts/scrollController.js"></script-->
+</head><body ng-controller="mainCtrl" ng-init="name='AI TÜRKEI Berlin'" class="ng-scope"><nosript>
+
+
+ <!-- ngInclude: 'templates/header.html' --><header ng-include="'templates/header.html'" class="ng-scope"><div class="container-fluid ng-scope">
+	 <div class="row-fluid col-md-12">
+	 	
+    	<img ng-src="assets/aiTuerkeiFlagge.png" alt="" id="indexHeaderFlag" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/aiTuerkeiFlagge.png" width="140" height="110">
+    	
+	 	<a href="https://www.facebook.com/amnesty1547" target="fenster" ng-click="window.open('link.html','fenster')"><img ng-src="assets/facebookIcon.png" alt="" id="indexHeaderImg1" target="fenster" onclick="window.open('','fenster','width=700, height=600, left=100, top=100, status, resizeable, scrollbars')" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/facebookIcon.png"></a>
+	 	
+	 	<a ng-href=""><img ng-src="assets/rssIcon.png" alt="" id="indexHeaderImg3" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/rssIcon.png"></a>	 
+	</div><!--end row-fluid-->
+ </div><!--end container-fluid-->  
+  <!--<img ng-src={{flag.flag}} alt="{{flag.altName}}" id="imgBanner"/>--> 
+      
+      <!--Ggf. TwitterLink:-->
+      <!--<a ng-href=""><img ng-src="{{indexHeaderImg2.src}}" width=40 height=40 alt="{{indexHeaderImg2.altname}}" id="indexHeaderImg2" /></a>-->
+      
+
+         </header> 
+ <!-- ngInclude: 'templates/navi.html' --><nav ng-include="'templates/navi.html'" class="navi ng-scope">        <div ng-controller="naviCtrl" class="ng-scope">
+          <ul class="ng-binding">
+          <br> 
+                                     
+           <div class="Navi1">              
+              <img src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/menubar.png" id="menueNavi1" alt="Menue-Icon" ng-click="toggleThis()" border="0">&nbsp;&nbsp;&nbsp;AMNESTY-TÜRKEI-BERLIN
+           </div>                                    
+           <span id="SubNavi" ng-hide="open" ng-mouseleave="toggleThis()" class="ng-hide">  	
+              <a href="#/aktuelles" ng-click="hide='open"><li>AKTUELLES</li></a><br>
+            	<a href="#/gruppe" ng-click="hide='open'" ng-mouseleave="hide='open'"><li>UNSERE GRUPPE</li></a><br>
+            	<a href="#/termine" ng-click="hide='open'" ng-mouseleave="hide='open'"><li>TERMINE</li></a><br>
+            	<a href="#/kontakt" ng-click="hide='open'" ng-mouseleave="hide='open'"><li>KONTAKT</li></a><br>
+            	<a href="#/impressum" ng-click="hide='open'" ng-mouseleave="hide='open'"><li>IMPRESSUM</li></a><br-->              
+           </br--></span> 
+           </ul></div>
+           <div class="Navi navbar navbar-inverse navbar-fixed-top ng-scope">
+            <div class="navbar-inner">
+              <div class="container-fluid">
+                <a class="brand" href="file:///#">AMNESTY-TÜRKEI-BERLIN</a>
+                <div class="nav-collapse collapse">
+                  <p class="navbar-text pull-right"><a href="http://www.amnesty.de/" target="fenster" onclick="window.open('','fenster','width=700, height=600, left=100, top=100, status, resizeable, scrollbars')" class="navbar-link">AI-Hauptseite</a></p>
+                  <ul>                    
+                    <a href="#/aktuelles"><li>AKTUELLES</li></a>
+                    <a href="#/gruppe"><li>UNSERE GRUPPE</li></a>
+                    <a href="#/termine"><li>TERMINE</li></a>
+                    <a href="#/kontakt"><li>KONTAKT</li></a>
+                    <a href="#/archive"><li>ARCHIV</li></a>&lt;
+                    <a href="#/impressum"><li>IMPRESSUM</li></a>
+                  </ul>
+                </div>
+              </div>           
+            </div>
+           </div>
+          
+          <!--button ng-click="toggleThis()">Open</button>
+        <span ng-hide="open">From:
+            <input type="text" id="from" />
+        </span>
+        <span ng-hide="open">To:
+            <input type="text" id="to" />
+        </span>
+        <span ng-show="open"></span-->
+        
+</nav>    
+ <!--div id="ausgabe">{{breite}}<br>{{angezBreite}}<br>{{geraetebreite}}</div><br--> 
+ <div class="container-fluid" id="indexMain">
+	 <div class="row-fluid">
+ 		<!-- ngInclude: 'templates/asideTempLeft.html' --><aside class="asideLeft col-md-2 ng-scope" ng-include="'templates/asideTempLeft.html'"><img ng-src="assets/TuerkeiFrauen.jpg" alt="" id="indexSideImg0" class="ng-scope" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/TuerkeiFrauen.jpg" width="150" height="90"> 
+<img ng-src="assets/TuerkeiDemo2.jpg" alt="" id="indexSideImg1" class="ng-scope" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/TuerkeiDemo2.jpg" width="150" height="90">  
+<img ng-src="assets/TuerkeiMR.jpg" alt="" id="indexSideImg2" class="ng-scope" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/TuerkeiMR.jpg" width="150" height="90"> 
+<img ng-src="assets/TuerkeiDemo.jpg" alt="" id="indexSideImg3" class="ng-scope" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/TuerkeiDemo.jpg" width="150" height="80">
+         </aside>
+ 		<section class="mainSection col-md-8" ng-click="hide='yes'">
+  			<!-- ngView:  --><div ng-view="" id="ngView" class="hero-unit ng-scope"><h3 class="ng-scope">Aktuelles</h3>
+<div class="container-fluid contentView ng-scope">
+  <div class="row-fluid">
+    <div class="col-md-1 date">Datum</div>
+    <div class="date col-md-7" ng-click="sortData('date')" ng-hide="hideDate">
+     <div ng-class="getSortArrows('date')" class="sortArrow arrow-down"></div>
+    </div>
+    <div id="tdImgRow" class="col-md-4"></div>
+  </div>
+
+<hr>
+<!-- ngRepeat: msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch --><div ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" class="ng-scope">
+  <div class="col-md-8">    
+    <div class="ng-binding">
+      <span id="dateMsg" class="ng-binding">18.08.2016</span><br>  <b class="ng-binding">RICHTER VERHAFTET</b><br>      
+        Lorem ipsum sed ...<br>
+      <div class="moreInfo"><u ng-click="showMoreNews()">mehr</u><br></div>
+      <div class="hiddenNews ng-binding" ng-bind="msg.subnews">genaueres hierzu</div>  <hr>          
+    </div>    
+  </div>
+  <div class="col-md-4"><img ng-src="assets/TuerkeiDemo2.jpg" "="" alt="Tuerkei Demo2" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/TuerkeiDemo2.jpg"></div>
+</div><!-- end ngRepeat: msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch --><div ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" class="ng-scope">
+  <div class="col-md-8">    
+    <div class="ng-binding">
+      <span id="dateMsg" class="ng-binding">19.08.2016</span><br>  <b class="ng-binding">EREN KESKIN</b><br>      
+        Ipsum Lorem sed ...<br>
+      <div class="moreInfo"><u ng-click="showMoreNews()">mehr</u><br></div>
+      <div class="hiddenNews ng-binding" ng-bind="msg.subnews">genaueres spezielleres hierzu</div>  <hr>          
+    </div>    
+  </div>
+  <div class="col-md-4"><img ng-src="assets/TuerkeiFrauen.jpg" "="" alt="Tuerkei Frauen" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/TuerkeiFrauen.jpg"></div>
+</div><!-- end ngRepeat: msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch --><div ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" class="ng-scope">
+  <div class="col-md-8">    
+    <div class="ng-binding">
+      <span id="dateMsg" class="ng-binding">20.08.2016</span><br>  <b class="ng-binding">MAL WAS POSITIVES</b><br>      
+        Gerüchteküche<br>
+      <div class="moreInfo"><u ng-click="showMoreNews()">mehr</u><br></div>
+      <div class="hiddenNews ng-binding" ng-bind="msg.subnews">was man so hört und liest</div>  <hr>          
+    </div>    
+  </div>
+  <div class="col-md-4"><img ng-src="assets/TuerkeiMR.jpg" "="" alt="Tuerkei Kontrollpolizist" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/TuerkeiMR.jpg"></div>
+</div><!-- end ngRepeat: msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch --><div ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" class="ng-scope">
+  <div class="col-md-8">    
+    <div class="ng-binding">
+      <span id="dateMsg" class="ng-binding">22.08.2016</span><br>  <b class="ng-binding">NOCH WAS AUS DER REGION</b><br>      
+        Klatsch und Tratsch<br>
+      <div class="moreInfo"><u ng-click="showMoreNews()">mehr</u><br></div>
+      <div class="hiddenNews ng-binding" ng-bind="msg.subnews">stille Post und alles andere</div>  <hr>          
+    </div>    
+  </div>
+  <div class="col-md-4"><img ng-src="assets/TuerkeiFrauen.jpg" "="" alt="Tuerkei Frauen" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/TuerkeiFrauen.jpg"></div>
+</div><!-- end ngRepeat: msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch --><div ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" class="ng-scope">
+  <div class="col-md-8">    
+    <div class="ng-binding">
+      <span id="dateMsg" class="ng-binding">27.08.2016</span><br>  <b class="ng-binding">WICHTIGES IN KÜRZE</b><br>      
+        Was sich gerade so eklatant verändert<br>
+      <div class="moreInfo"><u ng-click="showMoreNews()">mehr</u><br></div>
+      <div class="hiddenNews ng-binding" ng-bind="msg.subnews">Bewegungen, Strömungen und Tendenzen</div>  <hr>          
+    </div>    
+  </div>
+  <div class="col-md-4"><img ng-src="assets/TuerkeiDemo.jpg" "="" alt="Tuerkei Demo" src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/TuerkeiDemo.jpg"></div>
+</div><!-- end ngRepeat: msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch -->  
+</div>
+        
+        
+        
+
+</div>  
+		</section>
+ 		<!-- ngInclude: 'templates/asideTempRight.html' --><aside class="asideRight col-md-2 ng-scope" ng-include="'templates/asideTempRight.html'"><h3 class="ng-scope">Dies und das</h3>
+<h4 class="ng-scope">Gruppentreffen</h4>
+<ul class="ng-scope">
+	<!-- ngRepeat: meeting in meetings --><li ng-repeat="meeting in meetings" class="ng-binding ng-scope">
+		Datum: 20.05.2900<br>
+		Uhrzeit: 20 h<br>
+		Ort: wo auch immer<br><br>
+	</li><!-- end ngRepeat: meeting in meetings --><li ng-repeat="meeting in meetings" class="ng-binding ng-scope">
+		Datum: 10.12.2500<br>
+		Uhrzeit: 10 h<br>
+		Ort: wo noch immer<br><br>
+	</li><!-- end ngRepeat: meeting in meetings -->
+</ul>
+<h4 class="ng-scope">Aktionen</h4>
+<ul class="ng-scope">
+	<!-- ngRepeat: meeting in meetings --><li ng-repeat="meeting in meetings" class="ng-binding ng-scope">
+		Datum: 20.05.2900<br>
+		Uhrzeit: 20 h<br>
+		Ort: wo auch immer<br><br>
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	</li><!-- end ngRepeat: meeting in meetings --><li ng-repeat="meeting in meetings" class="ng-binding ng-scope">
+		Datum: 10.12.2500<br>
+		Uhrzeit: 10 h<br>
+		Ort: wo noch immer<br><br>
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+		
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	</li><!-- end ngRepeat: meeting in meetings -->
+</ul>
+         </aside>
+ <footer>© Stefan Landvogt</footer>    
+ <script src="Amnesty%20T%C3%BCrkei%20Berlin-Gruppe-Dateien/mainJs.txt"></script>
+
+</div></div></nosript></body></html>

@@ -1,0 +1,16 @@
+<div id="termine" class="contentView1">
+<h3>Termine</h3>
+Unsere nächsten Termine<br><br>
+<ul>
+	<li ng-repeat="meeting in meetings">
+		Datum: <b>{{meeting.date}}</b><br>
+		Uhrzeit: {{meeting.time}}<br>
+		Anlass: {{meeting.action}}<br>
+		Ort: {{meeting.place}}<br><br>
+		<img src="{{meeting.src1}}" alt="{{meeting.imgTxt1}}" id="meetingPic"><br>
+		<a ng-href="{{meeting.src2}}">{{meeting.imgTxt2}}</a><br>
+		<a ng-href="{{meeting.src3}}">{{meeting.imgTxt3}}</a><br>
+		<hr>
+	</li>
+</ul>
+</div>

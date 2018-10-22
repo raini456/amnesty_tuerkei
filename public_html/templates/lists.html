@@ -1,0 +1,35 @@
+
+        <ul>
+            <li class="date" ng-click="sortData('date')" ng-hide="hideDate">{{tblTh.date}}<div ng-class="getSortArrows('date')"></div>
+                <ul ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" >
+                    <li ng-bind="msg.date | date: dd/MM/yyyy" ng-hide="hideDate"></li>        
+                </ul>
+            </li>
+            <li ng-click="sortData('subtitle')">{{tblTh.subtitle}}<div ng-class="getSortArrows('subtitle')"></div>
+                <ul ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" >
+                    <li ng-bind="msg.subtitle | uppercase"></li>        
+                </ul>
+            </li>
+            <li ng-click="sortData('news')"> {{tblTh.news}}<div ng-class="getSortArrows('news')"></div>
+                <ul ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" >
+                    <li ng-bind="msg.news"></li>        
+                </ul>
+            </li>
+            <li ng-click="sortData('subnews')">{{tblTh.subnews}}<div ng-class="getSortArrows('subnews')"></div>
+                <ul ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" >
+                    <li ng-bind="msg.subnews"></li>        
+                </ul>
+            </li>
+            <li ng-click="sortData('source')">{{tblTh.source}}<div ng-class="getSortArrows('source')"></div>
+                <ul ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" >
+                    <li ng-bind="msg.source | sourceFilter"></li>        
+                </ul>
+            </li>
+            <li ng-bind="tblTh.eval">{{msg.likes}}<br>        
+                {{msg.dislikes}}</li> 
+            <li ng-bind="tblTh.action">
+                <button class="increm" ng-click="incremLikes(msg)">+</button>
+                <button class="decrem" ng-click="decremLikes(msg)">-</button>
+            </li>
+        </ul>      
+            

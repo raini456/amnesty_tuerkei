@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="tryApp">
+<head>
+<title>AngularJS_DOM_Manipulation</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="DOM Manipulation mit AngularJS">
+<meta name="keywords" content="">
+<META NAME="AUTHOR" CONTENT="Stefan Landvogt">
+<META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="Deutsch">
+<META NAME="RATING" CONTENT="Alle">
+<META NAME="ROBOTS" CONTENT="index,follow">
+<link rel="stylesheet" href="../css/main.css" type="text/css" />
+<script src="../scripts/lib/jquery.min.js"></script>
+<script src="../scripts/lib/angularJS.js"></script>
+<script src="../scripts/myAngDirectives.js"></script>
+<nosript></noscript>
+</head>
+<body>
+ <input type="text" ng-model="try"><br>
+ {{try}}
+ <my-widget>
+  <div id="one" class="box"></div>
+  <div id="two" class="box"></div>
+ </my-widget>
+ 
+</body>
+</html>

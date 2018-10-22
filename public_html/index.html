@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+    <head>
+        <title>Amnesty Türkei Berlin-Gruppe</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Amnesty Türkeigruppe Berlin">
+        <meta name="keywords" content="">
+        <meta name="AI T&uuml;rkei Berlin" content="Gruppenseite">
+        <META NAME="OWNER" CONTENT="Amnesty International">
+        <META NAME="AUTHOR" CONTENT="Stefan Landvogt">
+        <META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="Deutsch">
+        <META NAME="RATING" CONTENT="Alle">
+        <META NAME="ROBOTS" CONTENT="index,follow">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+
+        <!--link rel="stylesheet" href="css/bootstrap.css" type="text/css" /-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/mainCss.css" type="text/css" />
+        <link rel="stylesheet" href="css/responsiveCss.css" type="text/css" />
+
+        <!--[if lt IE 9]>
+                <script src="scripts/lib/mediaQueries.js"></script>
+        <![endif]-->
+        <noscript></noscript>
+    </head>
+    <body ng-init="name = 'AI TÜRKEI Berlin'" ng-controller="mainCtrl">
+        <div class="row">
+            <header ng-include="'templates/header.html'"></header>
+        </div> 
+
+        <!--div id="ausgabe">{{breite}}<br>{{angezBreite}}<br>{{geraetebreite}}</div><br--> 
+        <div class="container" id="indexMain"> 
+            <div class="row">
+                <div class="col-12" ng-include="'templates/picsTop.html'"></div>
+            </div>
+            <div class="row">
+                <aside class="asideRight col-md-3" ng-include="'templates/naviLeft.html'"></aside>
+                <div class="col-12 col-md-6">
+                    <div ng-view id="ng-view" class="hero-unit"></div>  
+                </div>
+                <aside class="asideRight col-12 col-md-3" ng-include="'templates/asideRight.html'"></aside>
+            </div> 	 
+        </div>
+        <div class="row">
+            <footer>
+                <div class="col-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; Programmierung und Gestaltung: Stefan Landvogt 2016
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.peh-berlin.de" target="fenster">peh-berlin.de</a></div>
+            </footer> 	
+
+            <script src="scripts/lib/jquery.min.js"></script>
+            <script src="scripts/lib/angularJS.js"></script>
+            <script src="scripts/lib/ngRoute.js"></script>
+            <script src="scripts/lib/angular-sanitize.js"></script>
+            <script src="scripts/toggle.js"></script>
+            <script src="scripts/mainModule.js"></script>
+            <script src="scripts/filters.js"></script>
+            <script src="scripts/getData.js"></script>
+            <script src="scripts/loginCtrl.js"></script>
+            <script src="scripts/stringService.js"></script>
+            <script src="scripts/contactCtrl.js"></script>
+            <script src="scripts/myAngDirectives.js"></script>
+            <script src="scripts/mainJs.js"></script>
+        </div>	   
+
+    </body>
+</html>

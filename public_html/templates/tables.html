@@ -1,0 +1,33 @@
+
+        <table>
+           <thead> 
+             <tr>
+                <th class="date" ng-click="sortData('date')" ng-hide="hideDate">{{tblTh.date}}<div ng-class="getSortArrows('date')"></div></th>
+                <th ng-click="sortData('subtitle')">{{tblTh.subtitle}}<div ng-class="getSortArrows('subtitle')"></div></th>
+                <th ng-click="sortData('news')"> {{tblTh.news}}<div ng-class="getSortArrows('news')"></div></th>
+                <th ng-click="sortData('subnews')">{{tblTh.subnews}}<div ng-class="getSortArrows('subnews')"></div></th>
+                <th ng-click="sortData('source')">{{tblTh.source}}<div ng-class="getSortArrows('source')"></div></th>
+                <th ng-bind="tblTh.eval"></th> 
+                <th ng-bind="tblTh.action"></th>      
+             </tr>
+           </thead>
+           <tbody>
+             <tr ng-repeat="msg in message | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch" >
+        	<td ng-bind="msg.date | date: dd/MM/yyyy" ng-hide="hideDate"></td>
+                <td ng-bind="msg.subtitle | uppercase"></td>
+        	<td ng-bind="msg.news"></td>
+        	<td ng-bind="msg.subnews"></td>	
+        	<td ng-bind="msg.source | sourceFilter"></td>
+            <td ng-show="showEval">{{msg.likes}}<br>        
+                {{msg.dislikes}}
+            </td>
+            <td ng-hide="showEval">#######</td>
+            <td ng-show="showEval">
+                <button class="increm" ng-click="incremLikes(msg)">+</button>
+                <button class="decrem" ng-click="decremLikes(msg)">-</button>
+            </td>
+            <td ng-hide="showEval">###########</td>
+           </tr>
+           </tbody>        	
+        </table>
+        <br><br><br><br>

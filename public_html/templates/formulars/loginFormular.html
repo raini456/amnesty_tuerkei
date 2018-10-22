@@ -1,0 +1,12 @@
+<div class="col-md-6">
+<article class="loginForm">
+   <form name="loginForm">
+    <input type="text" ng-model="member.user" name="groupMember" placeholder="Gruppenmitglied" required><br>
+    <input type="password" ng-model="member.pass" name="password" placeholder="Passwort" required><br>
+    
+    <input type="button" value="absenden" ng-click="login(member)" ng-disabled="loginForm.$invalid">
+   </form>
+    <div>{{loginMessage}}</div><br><br>   
+ </article>
+ </div>
+ <div class="col-md-6" ></div>

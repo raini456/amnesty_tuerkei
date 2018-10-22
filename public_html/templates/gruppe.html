@@ -1,0 +1,52 @@
+<?php
+        session_start();
+?>
+<h3>Unsere Gruppe</h3>
+<div class="container-fluid contentView">
+	<div class="row-fluid">
+ 		<div class="gruppeMain col-md-12">  
+			<h4>Wer wir sind</h4>
+				<p>
+					In der Türkeigruppe Berlin treffen sich einmal im Monat Freiwillige, die sich aus unterschiedlichen Gründen für die Entwicklung der Menschenrechte in der Türkei interessieren. <br>
+					Die Treffen dienen dazu, sich über die aktuelle Situation in der Türkei auszutauschen und verschiedene Aktionen, Infostände und Veranstaltungen zu organisieren. Dabei geht es in erster Linie darum, andere Menschen über Missstände und Probleme aufzuklären und eine breitere Öffentlichkeit über die Situation der Menschenrechte in der Türkei zu informieren. Der Fokus liegt dabei auf Themen wie der Meinungs- und Pressefreiheit, die Situation der kurdischen Minderheit und die kriegerischen Auseinandersetzungen in den kurdischen Gebieten im Süd-Osten der Türkei. <br><br>
+					Wir freuen uns immer über neue Mitglieder und Interessierte. Gerne könnt ihr mit und Kontakt aufnehmen und erfahrt so, den nächsten Termin für unser Gruppentreffen.
+				</p>
+		</div>
+	</div><!--end row-fluid-->
+	<div class="row-fluid">
+		<div class="gruppeUntenRechts col-md-6">
+			<h4>Kontaktmöglichkeit</h4>
+			Wir treffen uns jeden letzten Mittwoch im Monat bei einem unserer Gruppenmitglieder. Genauere Informationen unter "<a href="#/termine">Termine</a>",
+			eine Nachricht kannst Du uns über unser <a href="#/kontakt">Kontaktformular</a> zukommen lassen<br><br>
+
+			Oder Du besuchst uns auf unserer <a href="https://www.facebook.com/amnesty1547"" target="fenster">Facebookseite</a><br><br>
+		</div>
+		<div class="gruppeInfoBarriere col-md-6" >
+			<h4>Informationen zur Barrierefreiheit</h4>
+			Die Treffpunkte der Berliner Amnesty-Türkei-Gruppe sind nicht immer barrierefrei. Falls Du einen barrierefreien Ort benötigst, kontaktiere uns bitte frühzeitig, damit wir einen solchen verabreden können.
+			<br>
+		</div>
+		
+	</div><!--end row-fluid-->
+	<div class="row-fluid">
+		<div class="gruppeUntenLinks col-md-12"> 
+			<h4>Gruppensprecher</h4>
+			Stephan Cooper<br><br>
+		</div>
+	</div><!--end row-fluid-->
+
+
+<hr><br>
+
+
+<div ng-controller="loginCtrl">
+ Login (für Gruppenmitglieder)<br><br>
+
+ <div ng-include='URLloginForm'></div>
+ <article id="internSection" ng-include='URLinternSection'></article>
+ <article id="inputAktuelles" ng-include='URLmbInputForm' ng-if="selectedForm"></article> 
+ <article id="updateForm" ng-include='URLchangeForm' ng-if="!selectedForm"></article>
+</div>
+<!--a href="#/inputForm"><button>Zum Eingabeformular</button></a>
+ </article-->
+  

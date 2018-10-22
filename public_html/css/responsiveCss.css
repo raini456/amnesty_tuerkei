@@ -1,0 +1,219 @@
+/*#ausgabe{
+        position:absolute;
+        margin-top:-5%;
+        background-color:gray;
+        z-index:2;
+        opacity:0.7;
+}
+
+img{
+        max-width: 110%;
+        height:auto;
+}
+table img{
+        max-width:100%;
+        height:auto;
+
+@media screen and (max-width:991px){			
+        .asideRight, .mainSection{
+                float:none;
+                width:auto;		
+                margin:0;
+        }
+}
+@media screen and (min-width:830px) and (max-width:2000px){		
+        #SubNavi{
+                display: none;
+        }
+}
+@media screen and (max-width:937px){	
+        .Navi{
+                font-size:0.724rem;		
+        }		
+        .navbar .brand{
+                font-size:0.93rem;	
+        }
+}
+@media screen and (max-width:830px){	
+        body{
+                font-size: 93%;
+        }
+        .Navi{
+                font-size:0.64rem;
+        }	
+        h2{
+                font-size:110%;
+        }
+        header{
+                margin:2em 0 0 0;
+        }		
+}
+@media screen and (min-width:550px) and (max-width:2000px){
+        .Navi1,	#SubNavi{
+                display:none;
+        }
+}
+@media screen and (max-width:750px){		
+        body{font-size:80%
+        }		
+        #indexSideImg0, #indexSideImg1, #indexSideImg2, #indexSideImg3{
+                width:130px;
+                height:80px;
+        }
+}
+@media screen and (max-width:725px){	
+        header{
+                margin-top:3rem;
+        }
+}
+
+@media screen and (max-width:675px){				
+        #imgBanner{
+                width:15%;
+                height:10%;
+        }	
+        #bannerName{
+                font-size:1.7em;
+        }	
+}
+@media screen and (max-width:650px){		
+        #indexSideImg0, #indexSideImg1, #indexSideImg2, #indexSideImg3{
+                width:120px;
+                height:75px;
+        }
+}
+@media screen and (max-width:605px){		
+        #bannerName{
+                font-size:1.5em;
+        }	
+        #indexSideImg0, #indexSideImg1, #indexSideImg2, #indexSideImg3{
+                width:104px;
+                height:66px;
+        }
+}
+@media screen and (max-width:550px){			
+        header{
+                margin-top:0;
+        }
+        h3{
+           font-size: 1.4rem;	
+        }
+        h4{
+                font-size:1rem;
+        }
+        .Navi{
+                display:none;		
+        }
+        .Navi1{
+                display:block;
+                font-size:1rem;		
+        }
+        #menueNavi1{
+                 width:30px;
+                 height:30px;
+        }
+        .contentView{
+                margin-left: -4.5rem;
+        }
+        .contentView1{
+                margin-left:-3rem;
+        }
+        .content{
+                font-size: 0.8rem;
+        }
+        #bannerName{
+                font-size:1.3rem;
+        }	
+        .asideRight, .mainSection{
+                float:none;
+                width:auto;		
+                margin:0;
+        }
+        .asideLeft{
+                display: none;
+        }
+        .asideRight{		
+                height:auto;
+        }
+        #ngView{
+                font-size:0.85rem;
+        }	
+}
+@media screen and (max-width:470px){
+    body{
+        font-size:85%;
+    }	
+        .Navi{
+                display:none;		
+        }
+        .Navi1{
+                display:block;		
+        }	
+        #bannerName{
+                font-size: 1rem;
+        }			
+        table{
+                font-size:0.85rem;
+        }
+        table img{
+                width:100%;
+                height:auto;
+        }
+        .mainSection{
+                width:100%;
+                }
+}
+@media screen and (max-width:400px){		
+        #ngView{
+                font-size: 0.81rem;
+                
+        }
+        
+}
+@media screen and (max-width:370px){		
+        #indexHeaderFlag{
+                width:110px;
+                height:70px;
+        }
+        #indexHeaderImg1, #indexHeaderImg3{
+                width:35px;
+                height:35px;
+        }
+}
+@media screen and (max-width:350px){		
+        body{
+                font-size:80%;
+        }
+        #bannerName{		
+                font-size:0.9rem;
+        }}		
+        
+}*/
+@media screen and (min-width:500px){
+    #headlineHeader{
+        font-size:1.6rem;        
+    }
+}
+@media screen and (min-width:576px){
+    #sandwich{
+        width:10%;
+    }
+    #picsTop {
+        margin: 5% auto;
+    }
+    #indexSideImg0, #indexSideImg1, #indexSideImg2, #indexSideImg3 {
+        width: 125%;
+        padding: 0 0 75% 0;    
+    }
+}
+@media screen and (min-width:768px){
+    #naviTop{
+        display:none;
+    }
+    #naviLeft{
+        display:block;
+    }
+    .card ul{
+    margin-left:-20%;
+}
+}

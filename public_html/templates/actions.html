@@ -1,0 +1,29 @@
+<h3>Urgent Actions, Briefe und mehr</h3>
+<div class="container-fluid content">
+  <div class="row-fluid">
+    <div class="col-md-1 date">Datum</div>
+    <div class="date col-md-7" ng-click="sortData('date')"  ng-hide="hideDate">
+     <div ng-class="getSortArrows('date')" class="sortArrow"></div>
+    </div>
+    <div id="tdImgRow" class="col-md-4"></div>
+  </div>
+
+<hr>
+<div  ng-repeat="uAction in uActions | limitTo:rowLimit:0 | orderBy:sortColumn:directSort | filter:keyword:exactSearch">
+  <div class="col-md-11">    
+    <div> 
+        <i>{{uAction.date}}</i><br>           
+        <b>{{uAction.header|uppercase}}</b><br><br>
+        {{uAction.message}}<br>
+        <a ng-href="{{uAction.URL}}" target="fenster">zur Aktion</a>
+
+       <hr>          
+    </div>    
+  </div>
+  <div class="col-md-1"><img ng-src="{{msg.pic}}"" alt="{{msg.picAlt}}"></div>
+</div>  
+</div>
+        
+        
+        
+

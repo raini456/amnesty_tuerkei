@@ -1,0 +1,45 @@
+  <button id="btnTop" ng-click="scrollTo('btnBottom')">Zum Seitenende</button><br><br>
+  <input type="text" ng-model="keyword" placeholder="Stichwortsuche" id="searchKeyword" />
+      <img ng-src="{{loupe.src}}" width="15" height="15" alt="{{loupe.altname}}" />
+         
+        <!---[ggf. für eine genauere Suche:]
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><font color="blue">{{keyword.date}}</font></i>        
+        <input type="text" ng-model="keyword.date" placeholder="Suche nach Datum" id="searchKeyword" />
+        <img ng-src="{{loupe.src}}" width="15" height="15" alt="{{loupe.altname}}" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><font color="blue">{{keyword.date}}</font></i><br><br>
+        <input type="text" ng-model="keyword.subtitle" placeholder="Themensuche" id="searchKeyword" />
+        <img ng-src="{{loupe.src}}" width="15" height="15" alt="{{loupe.altname}}" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><font color="blue">{{keyword.subtitle}}</font></i><br><br>
+        <input type="text" ng-model="keyword.news" placeholder="Shortnews-Suche" id="searchKeyword" />
+        <img ng-src="{{loupe.src}}" width="15" height="15" alt="{{loupe.altname}}" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><font color="blue">{{keyword.news}}</font></i><br><br-->
+        <input type="checkbox" ng-model="exactSearch" />Genauer Begriff<br><br>
+        Nachrichtenanzahl bitte wählen: <input type="number" value={{rowLimit}} step="1" min="0" max="20" ng-model="rowLimit" /><br><br>
+        Sortieren nach: 
+        <select ng-model="sortColumn">
+          <option value="date">Datum</option>
+          <option value="subtitle">allg. Thema</option>
+          <option value="news">Kurzinfo</option>
+          <option value="subnews">mehr</option>
+          <option value="source">Quelle</option>          
+        </select><br><br>  
+        <input type="checkbox" ng-model="hideDate" />Datum ausblenden<br>
+        <input type="checkbox" ng-model="showEval" />Bewertung einblenden<br>
+        <br>
+        Select View:
+        <select ng-model="selectedURL">
+          <option value="templates/actualContentTable.html">Tabelle
+          </option>
+          <option value="templates/lists.html">Liste
+          </ption>  
+          <option value="templates/tableCreateSpace.html">Tabelle Leerzeichen kreieren
+          </option>
+        </select><br><br>
+        <div ng-include="selectedURL"></div>
+
+        
+
+        
+        
+        <!--a href="http://facebook.com/amnesty1547">Facebook-Seite</a></h2></font-->		
+        <button id="btnBottom" ng-click="scrollTo('btnTop')">Zum Seitenanfang</button><br><br><br>

@@ -1,0 +1,51 @@
+
+<div class="row"> 
+  <div class="col-sm-10">
+    <h3>News ändern</h3>
+    (Du kannst nur eigene Nachrichten ändern oder löschen!)
+        <br>
+        <div ng-init="inputDate=(date | date:'dd.MM.yyyy')">{{inputDate}}</div>
+        Datum der News (bitte Format "dd.mm.yyyy" einhalten, z.B. 24.06.2016):<br>
+        <input type="text" placeholder="dd.MM.yyyy" ng-model="dtaChg.inputDate" style="height:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button ng-click="holeNachricht(dtaChg)">News anfordern</button> 
+        <form><!--method="post" action="php/dataPHP.php" ng-submit="updateData(dtaChg)"-->  
+            <div ng-repeat="dtaChg in dataForChange"> 
+             <input type="hidden" ng-model="dtaChg.username">
+             <br>
+             Datum (zum Datenabgleich der zu ändernden Nachricht erneut eingeben):<br>
+             <input type="text" ng-model="dtaChg.datum"><br>
+             Autor:<br>             
+             <input type="text" ng-model="dtaChg.verfasser"><br><br>             
+             Thema:<br>
+             <input type="text" ng-model="dtaChg.thema"><br>
+             Nachricht:<br>
+             <textarea ng-model="dtaChg.nachricht" cols=30 rows=3></textarea><br>
+             mehr:<br>
+             <textarea ng-model="dtaChg.mehrInfos" cols=30 rows=3></textarea><br><br>
+             <div ng-init="dtaChg.datum=dtaChg.inputDate"></div>
+             <input type="submit" ng-click="updateData(dtaChg)" value="ändern" ng-disabled="changeDataForm.$invalid"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="submit" ng-click="deleteData(dtaChg)" value="löschen" ng-disabled="changeDataForm.$invalid"/><br><br>
+            </div>
+              
+                 <!--u>Deine Eingabe:</u><br>
+                 <i ng-init="dtaChg.inputDate=member.inputDate">
+
+                 {{dtaChg.inputDate}}<br>                
+                 Autor: {{dtaChg.verfasser}}<br>
+                 Thema: <br>{{dtaChg.thema.toUpperCase()}}<br>
+                 Kurzinfo: <br>{{dtaChg.nachricht}}<br>
+                 mehr:<br><textarea cols=80 rows=5> {{dta.mehrInfos}}</textarea>                 
+
+             
+                 </i><br>
+             </p--> 
+                              
+     </form>  
+     <button ng-click="dtaChgAusblenden()" style="margin-bottom: 20px">Logout</button>        
+  </div>
+ <div class="col-sm-1">
+     
+ </div>
+ <div class="col-sm-1"><img src="assets/crossRed.png" alt="x-Button" border="0" width="15" height="15" style="margin-top:20px " id="x-button" ng-click="dtaChgAusblenden()">
+ </div>
+</div>
